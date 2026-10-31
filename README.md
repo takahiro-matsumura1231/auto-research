@@ -1,4 +1,4 @@
-# research-harness
+# auto-research
 
 AIエージェント（Claude Code / Codex）と一緒に、**後から検証できる研究**を進めるためのテンプレートです。
 
@@ -16,7 +16,7 @@ AIエージェント（Claude Code / Codex）と一緒に、**後から検証で
 
 ```bash
 mkdir ~/my-research && cd ~/my-research
-git clone https://github.com/takahiro-matsumura1231/research-harness.git .
+git clone https://github.com/takahiro-matsumura1231/auto-research.git .
 rm -rf .git && git init          # テンプレートの履歴を切り離す
 bash scripts/setup.sh            # 対話形式で project.yaml を埋め、hookとエージェント設定を確認
 ```
