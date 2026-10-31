@@ -1,0 +1,38 @@
+# プロジェクト固有の設定。scripts/setup.sh が対話形式で埋める。手で編集してもよい。
+# エージェントはこのファイルを最初に読む。
+
+project:
+  name: "TODO: プロジェクト名"
+  one_line: "TODO: 研究の問いを1文で"
+  owner: "TODO: 担当者"
+  started: "TODO: YYYY-MM-DD"
+
+language: ja            # ユーザー向けの回答・文書の言語（ja / en）
+
+linear:
+  team_key: "TODO"      # 例: RSC（Issue番号の接頭辞）
+  project: "TODO"       # Linear のプロジェクト名
+  labels:
+    experiment: Experiment
+    writing: Writing
+    admin: Admin
+    bug: Bug
+
+python:
+  interpreter: python   # 例: /home/you/anaconda3/envs/myenv/bin/python
+  test_command: "python -m pytest -q"
+
+paths:                   # gitに入れない大きなもの
+  raw_data: "TODO: 原データの場所"
+  checkpoints: "TODO: checkpointの保存先"
+  cache: "TODO: キャッシュの場所"
+
+compute:
+  gpus: "TODO: 例: RTX 4090 x2"
+  default_device: cuda
+
+git:
+  auto_push: false       # true にすると、エージェントは完了した作業単位ごとに push する
+
+preview:
+  port: 8765             # tools/serve_preview.sh のポート

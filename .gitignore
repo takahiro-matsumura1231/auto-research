@@ -1,0 +1,27 @@
+# data, weights, caches stay outside git (see project.yaml paths)
+data/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+cache/
+runs/
+wandb/
+logs/*.log
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+
+# editors / OS
+.DS_Store
+.vscode/
+.idea/
+
+# local agent settings
+.claude/settings.local.json

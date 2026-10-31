@@ -1,0 +1,33 @@
+# <id> の機械可読プロトコル。登録を確定したら registered: true にする（以後は変更不可、版を上げる）。
+id: "<id>"
+version: 1
+registered: false
+linear_issue: "ABC-NN"
+decision: "NNNN"
+
+data:
+  dataset_version: ""
+  split_file: ""
+outer_folds: [0, 1, 2, 3, 4]
+seeds: [0, 1, 2]
+
+arms:
+  control: {}
+  candidate: {}
+
+selection:
+  uses: inner_folds_only
+  metric: mae
+
+checkpoint:
+  dir: ""            # project.yaml paths.checkpoints の下
+  components: [backbone, head, scaler, config, provenance]
+
+analysis:
+  primary: ""
+  bootstrap:
+    unit: ""
+    n: 10000
+    seed: 0
+  secondary: []
+  adoption_rule: ""
