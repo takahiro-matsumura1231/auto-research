@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Initial setup for a project created from research-harness.
+# Initial setup for a project created from auto-research.
 #   bash scripts/setup.sh           interactive
 #   bash scripts/setup.sh --check   only run the checks
 set -euo pipefail
@@ -90,5 +90,5 @@ cat <<'TXT'
   - claude を起動し、/mcp で linear を認証する
   - docs/decisions/decision_log.md の 0001 の TODO を埋める（探索段階があれば、そのタグと持ち込むもの）
   - /new-round で最初の研究ラウンドを開く
-  - 最初のコミット:  git add -A && git commit -m "Open repository from research-harness"
+  - 最初のコミット:  git add -A && git commit -m "Open repository from auto-research"
 TXT

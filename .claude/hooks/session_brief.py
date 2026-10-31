@@ -44,4 +44,4 @@ for ledger in sorted((root / "docs/rounds").glob("*/README.md")):
         out.extend(rows[:12])
 
 if out:
-    print("\n".join(["[research-harness brief]"] + out + ["作業前に AGENTS.md と docs/handover.md を確認すること。"]))
+    print("\n".join(["[auto-research brief]"] + out + ["作業前に AGENTS.md と docs/handover.md を確認すること。"]))
